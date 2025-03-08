@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Wedding - RSVP</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>RSVP for Our Wedding</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="info.html">Info</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="rsvp-form">
+      <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+        <!-- Replace YOUR_EMAIL with your actual email address -->
+        <input type="hidden" name="_subject" value="New RSVP!">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="attendance">Will you attend?</label>
+        <select id="attendance" name="attendance" required>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+        
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="0" required>
+        
+        <button type="submit">Submit RSVP</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Our Wedding. All rights reserved.</p>
+  </footer>
+</body>
+</html>
